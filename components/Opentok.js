@@ -6,13 +6,6 @@ const sessionId = '';
 const token = '';
 
 export default function Opentok() {
-  /* OT.initPublisher('', (err) => {
-    if (err) {
-      console.log('err', err);
-    }
-    console.log('Publisher created');
-  }); */
-
   function handleError(error) {
     if (error) {
       console.error(error);
@@ -67,11 +60,6 @@ export default function Opentok() {
   useEffect(() => {
     initializeSession();
   }, []);
-
-  /* render() {
-    const { className, style } = this.props;
-    return <div className={className} style={style} ref={(node) => { this.node = node; }} />;
-  } */
   return (
     <div id="videos">
       <div id="publisher"></div>
